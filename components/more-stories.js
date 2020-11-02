@@ -7,9 +7,7 @@ export default function MoreStories({ posts }) {
   
   return (
     <section>
-      <h2 className="mb-8 text-6xl md:text-6xl font-bold tracking-tighter leading-tight">
-        More Stories
-      </h2>
+      
       <Masonry columnsCount={2} gutter={20}>
         {posts.map((post) => (
     

@@ -1,12 +1,7 @@
-import { CMS_NAME, CMS_URL } from '@/lib/constants'
+import { CMS_NAME, CMS_URL, SITE_NAME } from '@/lib/constants'
 
-export default function Intro() {
-  return (
-    <section className="flex-col md:flex-row flex items-center md:justify-between mt-16 mb-16 md:mb-12">
-      <h1 className="text-6xl md:text-6xl font-bold tracking-tighter leading-tight md:pr-8">
-      MUSES OF NOW.
-      </h1>
-      <h4 className="text-center md:text-left text-lg mt-5 md:pl-8">
+/*
+<h4 className="text-center md:text-left text-lg mt-5 md:pl-8">
         A statically generated blog example using{' '}
         <a
           href="https://nextjs.org/"
@@ -23,6 +18,16 @@ export default function Intro() {
         </a>
         .
       </h4>
+*/
+
+export default function Intro() {
+  return (
+    <section className="flex-col md:flex-row flex items-center md:justify-between mt-16 mb-16 md:mb-12">
+      <h1 className="text-6xl md:text-6xl font-bold tracking-tighter leading-tight md:pr-8">
+      {SITE_NAME}
+      </h1>
+   
+      
     </section>
   )
 }
