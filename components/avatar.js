@@ -1,7 +1,10 @@
+import { SHOW_AUTHOR } from '@/lib/constants'
+
 export default function Avatar({ name, picture }) {
   const url = picture.url ?? picture[0].url
 
   return (
+    SHOW_AUTHOR ? (
     <div className="flex items-center">
       <img
         src={`${
@@ -11,6 +14,6 @@ export default function Avatar({ name, picture }) {
         alt={name}
       />
       <div className="text-xl font-bold">{name}</div>
-    </div>
+    </div> ) : ("")
   )
 }
