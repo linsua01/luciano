@@ -8,8 +8,7 @@ export default function Footer() {
   return (
     <footer className=" mt-20" >
       <div className="text-center" >
-        <FontAwesomeIcon icon={["fal", "coffee"]} />
-        <FontAwesomeIcon icon="coffee" />
+        
       </div>
 
       <div className="text-center mb-10">
